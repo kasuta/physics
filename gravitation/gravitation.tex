@@ -1,0 +1,239 @@
+% LaTeX テンプレート — 授業資料用 (LuaLaTeX を想定、両面: 奇数ページにヘッダー)
+\documentclass[11pt,twoside,fleqn]{article}
+
+% LuaLaTeX 向け設定: 日本語対応に luatexja-fontspec と fontspec を使用
+\usepackage{fontspec}
+\usepackage{luatexja-fontspec}
+
+% 必要に応じて日本語フォントを明示（環境に応じて変更してください）
+% 例: \setmainjfont{Noto Serif CJK JP}
+
+% 単位表示の統一: siunitx を使用
+\usepackage{siunitx}
+\sisetup{detect-mode=true, per-mode=symbol}
+
+% その他のパッケージ
+\usepackage{tikz}
+\usepackage{fancybox}
+\usepackage{ascmac}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{lipsum} % サンプル用ダミーテキスト
+\usepackage{ulem}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{dashrule}
+
+%Tikz
+\usepackage{physmotion}
+
+% 使い方: 以下を編集してください
+\newcommand{\SubjectTitle}{重力による運動まとめ} %テーマ
+\newcommand{\ClassRoomInfo}{\underline{\hspace{0.5cm}}年\underline{\hspace{0.5cm}}組　氏名\underline{\hspace{3cm}}}
+
+% 余白設定
+\geometry{top=20mm,bottom=25mm,left=20mm,right=20mm,heightrounded}
+
+% ヘッダー設定: 奇数ページに表示（左: 科目と内容、右: 学年組欄）
+\setlength{\headheight}{14pt}
+\setlength{\headsep}{36pt}
+\pagestyle{fancy}
+\fancyhf{} % 既定のヘッダー/フッターをクリア
+\fancyhead[LO]{\small 物理基礎「\SubjectTitle」} %Odd page Left headerを設定
+\fancyhead[RO]{\small \ClassRoomInfo} % Odd page Right headerを設定
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+% フッター中央にページ番号を表示
+\fancyfoot[C]{\small\thepage}
+
+% 偶数ページはヘッダーを空にして、本文が上から始まるようにする
+\fancyhead[LE,CE,RE]{}
+
+% ドキュメント開始
+\begin{document}
+%復習：等加速度直線運動=====================================================================================
+% \section{\textbf{復習}}
+\begin{itembox}[l]{\textbf{〇等加速度直線運動}}
+	\begin{minipage}[t]{0.70\linewidth}
+	等加速度直線運動の変位・速度の式
+	\Large
+	\[
+	\left(
+	\begin{array}{ll}
+		\text{⓪} \quad a = & \\
+		\text{①} \quad v = & \\
+		\text{②} \quad x = & \\
+		\text{③} \quad v^2 - v_0^2 = 2ax &
+	\end{array}
+	\right.
+	\]
+	\begin{center}
+		% \motiondiagram{初速度}{終速度}{加速度}：画像を挿入
+		\motiondiagram{v_0}{v}{a}{t}
+	\end{center}	
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.26\linewidth}
+		\begin{shadebox}
+			\begin{align*}
+				v\,[\si{\metre\per\second}] &\text{：速度} \\
+				v_0\,[\si{\metre\per\second}] &\text{：初速度} \\
+				a\,[\si{\metre\per\second\squared}] &\text{：加速度} \\
+				t\,[\si{\second}] &\text{：時間} \\
+				x\,[\si{\metre}] &\text{：変位} \\
+				g\,[\si{\metre\per\second\squared}] &\text{：重力加速度}\\
+			\end{align*}
+		\end{shadebox}
+	\end{minipage}
+\end{itembox}
+%復習：鉛直投げ下ろし=====================================================================================
+\begin{itembox}[l]{\textbf{〇鉛直投げ下ろし・鉛直投げ上げ}}
+	\begin{minipage}[t]{0.70\linewidth}
+		鉛直投げ下ろし運動の変位・速度の式
+		\Large
+		\[
+		\left(
+		\begin{array}{ll}
+			\text{⓪} \quad a = & \\
+			\text{①} \quad v = & \\
+			\text{②} \quad y = & \\
+			\text{③} \quad v^2 - v_0^2 = 2gy &
+		\end{array}
+		\right.
+		\]
+		\normalsize
+			\begin{shadebox}
+				特徴：\\
+				・加速度の向きと軸の向きが同じ\\
+				\quad\to 加速度は$a=g$\\
+				・等加速度直線運動の式について、$a=g$、$x=y$とすることで\\　鉛直投げ下ろし運動の式が得られる。\\
+				・初速度$v_0=0$の時、自由落下になる。
+			\end{shadebox}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.26\linewidth}
+		\begin{center}
+			% \throwdowndiagram{初速度v_0}{終速度v}{加速度g}{時刻変数t}：画像を挿入
+			\throwdowndiagram{v_0}{v}{g}{t}
+		\end{center}
+	\end{minipage}
+\end{itembox}
+
+%復習：鉛直投げ上げ=====================================================================================
+\begin{itembox}[l]{\textbf{〇鉛直投げ上げ}}
+	\begin{minipage}[t]{0.70\linewidth}
+		鉛直投げ上げ運動の変位・速度の式
+		\Large
+		\begin{flalign*}
+			&\left(
+			\begin{array}{ll}
+				\text{⓪} \quad a = & \\
+				\text{①} \quad v = & \\
+				\text{②} \quad y = & \\
+				\text{③} \quad v^2 - v_0^2 = -2gy &
+			\end{array}
+			\right. &
+		\end{flalign*}
+		\normalsize
+		\begin{shadebox}
+				特徴：\\
+				・加速度の向きと軸の向きが逆\\
+				\quad\to 加速度は$a=-g$\\
+				・等加速度直線運動の式について、$a=-g$、$x=y$とすることで\\　鉛直投げ上げ運動の式が得られる。\\
+				・最高点では速度$v=0$になる。
+		\end{shadebox}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.26\linewidth}
+		\begin{center}
+			% \throwdowndiagram{初速度v_0}{終速度v}{加速度g}{時刻変数t}：画像を挿入
+			\throwupdiagram{v_0}{v}{g}{t}
+		\end{center}
+	\end{minipage}
+\end{itembox}
+\clearpage
+%復習：水平投射=====================================================================================
+\begin{itembox}[l]{\textbf{〇水平投射}}
+	\begin{minipage}[t]{0.60\linewidth}
+		水平投射運動の変位・速度の式(水平方向)
+		\Large
+		\[
+		\left(
+		\begin{array}{ll}
+			\text{⓪} \quad a = & \\
+			\text{①} \quad v = & \\
+			\text{②} \quad y = & 
+		\end{array}
+		\right.
+		\]
+		\normalsize
+		水平投射運動の変位・速度の式(鉛直方向)
+		\Large
+		\[
+		\left(
+		\begin{array}{ll}
+			\text{⓪} \quad a = & \\
+			\text{①} \quad v = & \\
+			\text{②} \quad y = &
+		\end{array}
+		\right.
+		\]
+		\normalsize
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.40\linewidth}
+		\begin{center}
+			% \throwdowndiagram{初速度v_0}{終速度v}{加速度g}{時刻変数t}：画像を挿入
+			\projectilediagram{v_0}{v_x}{v_y}{v}{g}{t}
+		\end{center}
+	\end{minipage}
+	\begin{shadebox}
+		特徴：\\\\\\\\\\\\\\\\
+	\end{shadebox}
+\end{itembox}
+
+\begin{itembox}[l]{\textbf{〇斜方投射}}
+	\begin{minipage}[t]{0.50\linewidth}
+		斜方投射運動の変位・速度の式(水平方向)
+		\Large
+		\[
+		\left(
+		\begin{array}{ll}
+			\text{⓪} \quad a = & \\
+			\text{①} \quad v = & \\
+			\text{②} \quad y = & 
+		\end{array}
+		\right.
+		\]
+		\normalsize
+		斜方投射運動の変位・速度の式(鉛直方向)
+		\Large
+		\[
+		\left(
+		\begin{array}{ll}
+			\text{⓪} \quad a = & \\
+			\text{①} \quad v = & \\
+			\text{②} \quad y = &
+		\end{array}
+		\right.
+		\]
+		\normalsize
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.50\linewidth}
+		\begin{center}
+			% \throwdowndiagram{初速度v_0}{終速度v}{加速度g}{時刻変数t}：画像を挿入
+			\obliqueprojectilediagram{v_0}{\theta}{v_{0x}}{v_{0y}}{g}{t}
+		\end{center}
+	\end{minipage}
+	\begin{shadebox}
+		特徴：\\\\\\\\\\\\\\\\
+	\end{shadebox}
+\end{itembox}
+
+
+
+\clearpage
+\end{document}
+
