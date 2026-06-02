@@ -150,23 +150,31 @@
 % 水平投射
 \section{水平投射}
 	\begin{minipage}[t]{0.34\linewidth}
-		\projectilediagram{v_0}{v_x}{v_y}{v}{g}{t}
+		\projectilediagram{v_{0x}}{v_x}{v_y}{v}{g}{t}
 		\\\\\\
 		\begin{itembox}[l]{補足}
-			I. 実際の速度$v$[m/s]は\\\qquad
-			\(
-				v = 
-			\)\\
-			で求めることができる。\\\\
-			II. ボールの軌道の導出\\
-			\to 方針：右の(i),(ii)式から$t$を消して、$x$と$y$と定数$g$,$v_0$のみの式にする。\\\\\\\\\\\\\\
+			I. 実際の速度$v$[m/s]は
+			\begin{flalign*}
+			&\qquad v= &
+			\end{flalign*}
+			で求めることができる。\\
+			II. ボールの軌道の式\\
+			(i)-(3)より
+			\[
+				t = \frac{x}{v_{0x}}
+			\]
+			これを(ii)-(3)に代入して、
+			\[
+				y = \frac{g}{2v_{0x}^2}x^2
+			\]
+			\to 二次関数！
 		\end{itembox}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[t]{0.58\linewidth}
-		
 		\ovalbox{①水平投射とは？}\\
-		左図のような重力($y$軸方向)がかかる運動のうち、初速度$v_0$が水平($x$軸方向)成分のみである物体の運動。\\\\
+		左図のような重力($y$軸方向)がかかる運動のうち、
+		初速度$v_{0x}$が水平($x$軸方向)成分のみである物体の運動。\\\\
 		\ovalbox{②今までとの違い}\\
 		重力方向以外にも運動する。\\
 		　\to \textbf{x軸方向も考えなければならない}\\\\
@@ -174,16 +182,16 @@
 			\begin{itemize}[leftmargin=2em,itemsep=0pt,topsep=2pt]
 				\item[(i)]
 				軸の向き：
-				初速度の向きを $x$ 軸の正、
-				重力加速度の向きを $y$ 軸の正とする。
+				初速度の向きを $x$ 軸の\underline{\hspace{0.75cm}}、
+				重力加速度の向きを $y$ 軸の\underline{\hspace{0.75cm}}とする。
 
 				\item[(ii)]
 				$t=0$ のとき、
-				物体は原点 $(x,y)=(0,0)$ にある。
+				物体は\underline{\hspace{3.5cm}}にある。
 
 				\item[(iii)]
 				重力加速度の大きさを $g$、
-				初速度の大きさを $v_0$ とする。
+				初速度の大きさを $v_{0x}$ とする。
 			\end{itemize}
 			　\\
 		\ovalbox{④$t$秒後の物体の位置と速度}　\uuline{\textbf{大事！！}}\\
@@ -195,9 +203,9 @@
 			\(
 			\left(
 			\begin{array}{ll}
-				\text{①} \quad a_x = & \\
-				\text{②} \quad v_x = & \\
-				\text{③} \quad x = & \\
+				\text{(1)} \quad a_x = & \\
+				\text{(2)} \quad v_x = & \\
+				\text{(3)} \quad x = & \\
 			\end{array}
 			\right.
 			\)\\
@@ -207,9 +215,9 @@
 			\(
 			\left(
 			\begin{array}{ll}
-				\text{①} \quad a_y = & \\
-				\text{②} \quad v_y = & \\
-				\text{③} \quad y = & \\
+				\text{(1)} \quad a_y = & \\
+				\text{(2)} \quad v_y = & \\
+				\text{(3)} \quad y = & \\
 			\end{array}
 			\right.
 			\)\\
@@ -238,11 +246,32 @@
 	小球を水平方向に速さ$6.0\,\si{\metre\per\second}$で投げ出した。
 	重力加速度の大きさを　　　\,\,\,\,$9.8\,\si{\metre\per\second\squared}$として
 	以下の問いに答えよ。\\
-	(1)1.0秒後の水平方向の速度成分は何$\si{\metre\per\second}$か求めよ。\\\\\\\\\\\\\\\\
-	(2)1.0秒後の鉛直方向の速度成分は何$\si{\metre\per\second}$か求めよ。\\\\\\\\\\\\\\\\
-	(3)1.0秒後の小球の速さは何$\si{\metre\per\second}$か求めよ。\\\\\\\\\\\\\\\\
-	(4)小球が地面に落ちるまでの時間は何$\si{\second}$か求めよ。\\\\\\\\\\\\\\\\\\\\
-	(5)小球が地面に落ちるまでの水平距離は何$\si{\metre}$か求めよ。
+	(1)1.0秒後の水平方向の速度成分は何$\si{\metre\per\second}$か求めよ。\\\\\\\\\\
+	(2)1.0秒後の鉛直方向の速度成分は何$\si{\metre\per\second}$か求めよ。\\\\\\\\\\
+	% (3)1.0秒後の小球の速さは何$\si{\metre\per\second}$か求めよ。\\\\\\\\\\\\\\\\
+	(3)小球が地面に落ちるまでの時間は何$\si{\second}$か求めよ。\\\\\\\\\\\\\\\\
+	(4)小球が地面に落ちるまでの水平距離は何$\si{\metre}$か求めよ。\\\\\\\\\\
+	問2．高さ$78.4\,\si{\metre}$のビルの屋上から
+	小球を水平方向に速さ$12\,\si{\metre\per\second}$で投げ出した。
+	重力加速度の大きさを　　　\,\,\,\,$9.8\,\si{\metre\per\second\squared}$として
+	以下の問いに答えよ。\\\\\\\\\\\\\\\\\\\\
+	\begin{minipage}[t]{0.44\linewidth}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.52\linewidth}
+			\begin{itembox}[l]{<参考>$v_0$,$v_x$,$v_{0x}$}
+			物理の問題では、変数の右下にラベルを\\張ることが多々ある。\\
+			今回出てきた$v_0$、$v_x$、$v_{0x}$もその例である。\\
+			以下にそれぞれの意味をまとめる。
+			\begin{center}
+				\begin{tabular}{ll}
+					$v_0$    & ：初速度の大きさ \\
+					$v_x$    & ：$x$軸方向の速度 \\
+					$v_{0x}$ & ：$x$軸方向の初速度 \\
+				\end{tabular}
+			\end{center}
+		\end{itembox}
+	\end{minipage}
 	\clearpage
 
 	% % 斜方投射
