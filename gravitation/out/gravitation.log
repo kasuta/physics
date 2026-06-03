@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.2.9)  1 JUN 2026 20:13
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.2.9)  3 JUN 2026 04:31
  restricted system commands enabled.
  file:line:error style messages enabled.
 **gravitation
@@ -1207,12 +1207,12 @@ Here is how much of LuaTeX's memory you used:
  156562,1144653 words of node,token memory allocated
  1435 words of node memory still in use:
    11 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 368 attribute, 55 glue_spec, 45 attribute_list, 3 write, 14 user_defined nodes
-   avail lists: 1:14,2:42029,3:1312,4:1130,5:372,6:44,7:3758,8:18,9:2072,10:14,12:1
+   avail lists: 1:18,2:41762,3:1312,4:1130,5:372,6:44,7:3730,8:19,9:2058,10:14,12:1
  46276 multiletter control sequences out of 65536+600000
  77 fonts using 38646111 bytes
  107i,20n,109p,2024b,1058s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb>
-Output written on gravitation.pdf (2 pages, 110216 bytes).
+Output written on gravitation.pdf (2 pages, 110158 bytes).
 
 PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
