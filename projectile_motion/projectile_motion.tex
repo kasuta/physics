@@ -56,12 +56,33 @@
 	% 斜方投射
 	\section{斜方投射}
 		\begin{minipage}[t]{0.44\linewidth}
-			\obliqueprojectilediagram{v_0}{\theta}{v_{0x}}{v_{0y}}{g}{t}\\
+			\obliqueprojectilediagram{v_0}{\theta}{v_{0x}}{v_{0y}}{a=-g}{t}\\\\
 			\begin{itembox}[l]{補足}
-				I. 最高点について\\\\\\\\\\\\\\\\
+				I. 最高点について\\
+				◎最高点では$v_y=0$(上図を参照)\\
+				右の(ii)より
+				\[
+					v_y=v_0\sin\theta -gt
+				\]
+				これがゼロになるとき最高点なので
+				\[
+					t_{\text{最高点}}=\frac{v_0\sin\theta}{g}
+				\]
 				II. ボールの軌道の導出\\
-				\to 方針：右の(i),(ii)式から$t$を消して、$x$と$y$と$g$，$v_0$，$\theta$のみの式にする。
-				\vspace{10.7cm}
+				(i)-③式より
+				\[
+					t=\frac{x}{v_0\cos\theta}
+				\]
+				これを(ii)-③式に入れて計算することで、
+				\[
+					y=-\frac{g}{2v_0^2\cos^2\theta}x^2+(\tan\theta)x\quad\text{：二次関数}
+				\]
+			\end{itembox}\\\\
+			\begin{itembox}[l]{<発展>最も遠くまで飛ばせる角度は？}
+				今回学習したことに加えて、三角関数の知識を用いると、斜方投射で一番遠くまで飛ばすことのできる角度が計算できる。\\
+				方針は、$x=v_{0}\cos\theta ×t$に着地する時間$t$を代入して、$x$を$\theta$の関数として表すことを目指す。\\
+				そうした後、$\theta$が最大になる角度を調べるともっとも遠くまで飛ばせる角度がわかる。
+
 			\end{itembox}
 			% 　\\
 			% \begin{itembox}[l]{<参考>$v_0$,$v_x$,$v_{0x}$}
@@ -119,7 +140,7 @@
 				\end{array}
 				\right.
 				\)\\
-				\to x軸方向の運動は\underline{\hspace{3.5cm}}と一致！\\
+				\to $x$軸方向の運動は\underline{\hspace{3.5cm}}と一致！\\
 				\item[(ii)]
 				$y$軸方向の運動：\\
 				\(
@@ -131,7 +152,7 @@
 				\end{array}
 				\right.
 				\)\\
-				\to y軸方向の運動は\underline{\hspace{3.5cm}}と一致！
+				\to $y$軸方向の運動は\underline{\hspace{3.5cm}}と一致！
 			\end{itemize}
 			　\\
 			\begin{itembox}[l]{<参考>三角比}
@@ -164,17 +185,13 @@
 	(4)投げてから地面に達するまでの時間は何$\si{\second}$か求めよ。\\\\\\\\\\\\\\
 	(5)小球が地面に落ちたときの水平距離は何$\si{\metre}$か求めよ。\\\\\\\\\\\\\\\\
 
-	\begin{minipage}[t]{0.44\linewidth}
-		\begin{itembox}[l]{<発展>最も遠くまで飛ばせる角度は？}
-			今回学習したことに加えて、三角関数の知識を用いると、斜方投射で一番遠くまで飛ばすことのできる角度が計算できる。\\
-			方針は、$x=v_{0}\cos\theta ×t$に着地する時間$t$を代入して、$x$を$\theta$の関数として表すことを目指す。\\
-			そうした後、$\theta$が最大になる角度を調べるともっとも遠くまで飛ばせる角度がわかる。
-		\end{itembox}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[t]{0.44\linewidth}
+	% \begin{minipage}[t]{0.44\linewidth}
 
-	\end{minipage}
+	% \end{minipage}
+	% \hfill
+	% \begin{minipage}[t]{0.44\linewidth}
+
+	% \end{minipage}
 
 	\clearpage
 \end{document}

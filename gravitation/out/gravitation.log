@@ -1,10 +1,10 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.2.9)  3 JUN 2026 04:31
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.1)  4 JUN 2026 14:20
  restricted system commands enabled.
  file:line:error style messages enabled.
 **gravitation
 (./gravitation.tex
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-10-24>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended collection.
@@ -61,7 +61,7 @@ luaotfload | db : Font names database loaded from C:/texlive/2025/texmf-var/luat
 \belowcaptionskip=\skip51
 \bibindent=\dimen147
 ) (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2026-01-19 L3 programming layer (loader) 
+Package: expl3 2025-10-24 L3 programming layer (loader) 
  (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
 File: l3backend-luatex.def 2025-10-09 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count281
@@ -86,13 +86,13 @@ Package: fontspec-luatex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
 \l__fontspec_tmpb_dim=\dimen149
 \l__fontspec_tmpc_dim=\dimen150
  (c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 ) (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec.sty
 Package: luatexja-fontspec 2025-09-30 fontspec support of LuaTeX-ja
  (c:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 ) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/luatexja.sty
-Package: luatexja 2026-01-30 Japanese Typesetting with Lua(La)TeX
+Package: luatexja 2025-10-27 Japanese Typesetting with Lua(La)TeX
  (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
 Package: luatexja-core 2023-10-07 Core of LuaTeX-ja
  (c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -117,11 +117,10 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 \pdftexcmds@toks=\toks17
 ) (c:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks18
 \XKV@tempa@toks=\toks19
-\XKV@tempb@toks=\toks20
  (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/keyval.tex))
 \XKV@depth=\count294
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -132,12 +131,12 @@ Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
 )
 Package: everyhook 2014/11/26 v1.2 (SVN Rev: 12)\ Hooks for low level TeX everyX primitives.
-\everypar=\toks21
-\frozen@everymath=\toks22
-\frozen@everydisplay=\toks23
-\everyhbox=\toks24
-\everyvbox=\toks25
-\everycr=\toks26
+\everypar=\toks20
+\frozen@everymath=\toks21
+\frozen@everydisplay=\toks22
+\everyhbox=\toks23
+\everyvbox=\toks24
+\everycr=\toks25
 )
 \ltjlineendcomment=\count296
 \ltj@dimen@zw=\dimen151
@@ -230,7 +229,7 @@ Inserting `ltj.create_dir_whatsit' in `hpack_filter'.
 Removing  `luaotfload.node_processor' from `pre_linebreak_filter'.
 Inserting `ltj.set_stack_level' in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
-Lua module: luatexja.jfmglue 2026-01-07 Insertion process of JFM glues, [x]kanjiskip and others
+Lua module: luatexja.jfmglue 2025-05-27 Insertion process of JFM glues, [x]kanjiskip and others
 Inserting `luatexja.beginpar.np_info' in `luatexja.jfmglue.whatsit_getinfo'.
 Inserting `luatexja.beginpar.np_info_after' in `luatexja.jfmglue.whatsit_after'.
 Inserting `ltj.mlist_to_hlist_pre' in `pre_mlist_to_hlist_filter'.
@@ -298,7 +297,7 @@ Inserting `ltj.direction' in `pre_shipout_filter'. (c:/texlive/2025/texmf-dist/t
 Package: lltjfont 2025-10-26 Patch to NFSS2 for LuaTeX-ja
 \ltj@@latex@plv=\count302
  (c:/texlive/2025/texmf-dist/tex/latex/base/tuenc.def
-File: tuenc.def 2025/07/18 v2.1d Standard LaTeX file
+File: tuenc.def 2024/12/21 v2.1c Standard LaTeX file
 \@remove@tlig@@@=\luafunction60
 LaTeX Font Info:    Redeclaring font encoding TU on input line 105.
 LaTeX Encoding Info:    Redeclaring text command \textquotesingle (encoding TU) on input line 148.
@@ -481,7 +480,7 @@ LaTeX Info: Redefining \strut on input line 71.
 \ltj@@add@kfam@@inner=\luafunction69
 \ltj@@adjust@baseline@inner=\luafunction70
 LaTeX Info: Redefining \fontencoding on input line 573.
-LaTeX Info: Redefining \fontfamily on input line 619.
+LaTeX Info: Redefining \fontfamily on input line 657.
 LaTeX Info: Redefining \fontseries on input line 813.
 LaTeX Info: Redefining \fontseriesforce on input line 814.
 LaTeX Info: Redefining \fontshape on input line 822.
@@ -518,7 +517,7 @@ Package: lltjcore 2025-06-12 Patch to LaTeX2e Kernel for LuaTeX-ja (for LaTeX2e 
 \@CL=\box67
 \@CR=\box68
 (load cache: extra_lmmono9-regular.luc)
-\@bannertoken=\toks27
+\@bannertoken=\toks26
 \@@paperheight=\dimen167
 \@@paperwidth=\dimen168
 \@@topmargin=\dimen169
@@ -543,7 +542,7 @@ LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 15.39551pt on input line 16.
  (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec-29e.sty
-Package: luatexja-fontspec-29e 2025-11-01 fontspec support of LuaTeX-ja
+Package: luatexja-fontspec-29e 2025-10-26 fontspec support of LuaTeX-ja
 \g__ltj_fontspec_altnumber_int=\count305
 )) (c:/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
@@ -567,7 +566,7 @@ Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages 
 Package: amstext 2024/11/17 v2.01 AMS text
  (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks28
+\@emptytoks=\toks27
 \ex@=\dimen171
 ))
 \l__siunitx_table_tmp_box=\box72
@@ -584,11 +583,11 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 \l__siunitx_unit_position_int=\count318
 \l__siunitx_unit_total_int=\count319
  (c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen176
 \ar@mcellbox=\box78
 \extrarowheight=\dimen177
-\NC@list=\toks29
+\NC@list=\toks28
 \extratabsurround=\skip52
 \backup@length=\skip53
 \ar@cellbox=\box79
@@ -600,7 +599,7 @@ Package siunitx Info: Option "detect-mode" has been deprecated in this
 (siunitx)             Use "mode = match" as a replacement.
 
  (c:/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks30
+\pgfutil@everybye=\toks29
 \pgfutil@tempdima=\dimen178
 \pgfutil@tempdimb=\dimen179
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -627,10 +626,10 @@ File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
 ) (c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks31
-\pgfkeys@temptoks=\toks32
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks33
+\pgfkeys@tmptoks=\toks32
 ))
 \pgf@x=\dimen182
 \pgf@y=\dimen183
@@ -648,9 +647,9 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \c@pgf@countb=\count321
 \c@pgf@countc=\count322
 \c@pgf@countd=\count323
-\t@pgf@toka=\toks34
-\t@pgf@tokb=\toks35
-\t@pgf@tokc=\toks36
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
 \pgf@sys@id@count=\count324
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
@@ -688,9 +687,9 @@ Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmath@dimen=\dimen192
 \pgfmath@count=\count327
 \pgfmath@box=\box81
-\pgfmath@toks=\toks37
-\pgfmath@stack@operand=\toks38
-\pgfmath@stack@operation=\toks39
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count328
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
@@ -775,8 +774,8 @@ Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen275
 \pgffor@skip=\dimen276
-\pgffor@stack=\toks40
-\pgffor@toks=\toks41
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
@@ -816,10 +815,10 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box91
 \shadowsize=\dimen286
 \@Sbox=\box92
-\do@VerbBox=\toks42
-\the@fancyput=\toks43
-\this@fancyput=\toks44
-\EndVerbatimTokens=\toks45
+\do@VerbBox=\toks41
+\the@fancyput=\toks42
+\this@fancyput=\toks43
+\EndVerbatimTokens=\toks44
 \Verbatim@Outfile=\write4
 \Verbatim@Infile=\read3
 ) (c:/texlive/2025/texmf-dist/tex/latex/ascmac/ascmac.sty
@@ -838,14 +837,14 @@ Package tascmac Info: Patch from LuaTeX-ja will be applied on input line 44.
 \ascmac@hoboxa=\box97
 \ascmac@hoboxb=\box98
 \@itemh=\dimen291
-\@iboxpos=\toks46
+\@iboxpos=\toks45
 \@iboxstr=\box99
 \@bwsp=\box100
 \@@bwsp=\box101
 \@bcal=\count341
 \shaderule=\dimen292
 )) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2025/07/09 v2.17z AMS math features
+Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
@@ -885,23 +884,23 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count349
 \dspbrk@lvl=\count350
-\tag@help=\toks47
+\tag@help=\toks46
 \row@=\count351
 \column@=\count352
 \maxfields@=\count353
-\andhelp@=\toks48
+\andhelp@=\toks47
 \eqnshift@=\dimen295
 \alignsep@=\dimen296
 \tagshift@=\dimen297
 \tagwidth@=\dimen298
 \totwidth@=\dimen299
 \lineht@=\dimen300
-\@envbody=\toks49
+\@envbody=\toks48
 \multlinegap=\skip55
 \multlinetaggap=\skip56
-\mathdisplay@stack=\toks50
-LaTeX Info: Redefining \[ on input line 2950.
-LaTeX Info: Redefining \] on input line 2951.
+\mathdisplay@stack=\toks49
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
 ) (c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -918,7 +917,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen306
 \Gm@layouthoffset=\dimen307
 \Gm@layoutvoffset=\dimen308
-\Gm@dimlist=\toks51
+\Gm@dimlist=\toks50
 ) (c:/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip57
@@ -935,7 +934,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip68
 \f@nch@widthC=\skip69
 \f@nch@widthR=\skip70
-\@temptokenb=\toks52
+\@temptokenb=\toks51
 ) (c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count357
@@ -945,7 +944,7 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \UL@box=\box104
 \UL@hyphenbox=\box105
 \UL@skip=\skip71
-\UL@hook=\toks53
+\UL@hook=\toks52
 \UL@height=\dimen309
 \UL@pe=\count360
 \UL@pixel=\dimen310
@@ -954,10 +953,10 @@ Package: ulem 2019/11/18
 \ULdepth=\dimen311
 ) (c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\enitkv@toks@=\toks54
+\enitkv@toks@=\toks53
 \labelindent=\skip72
 \enit@outerparindent=\dimen312
-\enit@toks=\toks55
+\enit@toks=\toks54
 \enit@inbox=\box107
 \enit@count@id=\count361
 \enitdp@description=\count362
@@ -1087,12 +1086,12 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 \scratchbox=\box108
 \nofMPsegments=\count365
 \nofMParguments=\count366
-\everyMPshowfont=\toks56
+\everyMPshowfont=\toks55
 \MPscratchCnt=\count367
 \MPscratchDim=\dimen318
 \MPnumerator=\count368
 \makeMPintoPDFobject=\count369
-\everyMPtoPDFconversion=\toks57
+\everyMPtoPDFconversion=\toks56
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1181,6 +1180,8 @@ Overfull \hbox (9.39993pt too wide) in paragraph at lines 58--89
 [][]  [] 
  []
 
+
+
 [1
 
 ]
@@ -1193,26 +1194,28 @@ Overfull \hbox (2.43088pt too wide) in paragraph at lines 197--230
 [][]  [] 
  []
 
+
+
 [2
 
 ] (./out/gravitation.aux)
  ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-10-24>
  ***********
 )
 
 Here is how much of LuaTeX's memory you used:
- 24466 strings out of 476076
+ 24466 strings out of 476290
  156562,1144653 words of node,token memory allocated
  1435 words of node memory still in use:
    11 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 368 attribute, 55 glue_spec, 45 attribute_list, 3 write, 14 user_defined nodes
-   avail lists: 1:18,2:41762,3:1312,4:1130,5:372,6:44,7:3730,8:19,9:2058,10:14,12:1
- 46276 multiletter control sequences out of 65536+600000
+   avail lists: 1:11,2:41762,3:1312,4:1130,5:372,6:44,7:3730,8:18,9:2058,10:14
+ 46062 multiletter control sequences out of 65536+600000
  77 fonts using 38646111 bytes
- 107i,20n,109p,2024b,1058s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,20n,101p,1756b,1058s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb>
-Output written on gravitation.pdf (2 pages, 110158 bytes).
+Output written on gravitation.pdf (2 pages, 110238 bytes).
 
 PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
