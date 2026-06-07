@@ -560,26 +560,24 @@ function drawProj(curT, tf, params, trail, Hmax, Xmax) {
   if (curT > 0.05 && curY > 0.5) {
     const vx = vx0;
     const vy_cur = vy0 - G * curT;
-    // 各軸のpx/m係数（X・Yでスケールが異なる）
+    // 画面座標系でのスケール係数（X・Yで異なる）
     const scaleX = plotW / Xmax;
     const scaleY = plotH / Hmax;
-    // 成分ベクトルを画面px換算（長さは物理速度に比例、適度な係数で表示）
-    const dispScale = Math.min(plotW, plotH) * 0.25 / Math.max(v0, 1);
-    const vxLen =  vx     * dispScale;
-    const vyLen = -vy_cur * dispScale;  // 画面はy下向きなのでマイナス
+    // 物理速度を画面pxに変換（それぞれの軸スケールを使う）
+    const rawVxPx =  vx     * scaleX;   // 画面上のvx成分 [px/s]
+    const rawVyPx = -vy_cur * scaleY;   // 画面上のvy成分 [px/s]（y反転）
+    // 初速ベクトルを画面座標に変換した長さを基準にする（θが違っても同じv0なら合成ベクトルが等長になる）
+    const refMag   = Math.sqrt((vx0 * scaleX) * (vx0 * scaleX) + (vy0 * scaleY) * (vy0 * scaleY));
+    const dispLen  = Math.min(plotW, plotH) * 0.5;
+    const dispScale = refMag > 0.01 ? dispLen / refMag : 1;
+    // 画面px換算の成分長さ（合成ベクトルの対角線と必ず一致する）
+    const vxLen = rawVxPx * dispScale;
+    const vyLen = rawVyPx * dispScale;
     // vx・vy成分矢印
-    drawArrow(ctx, bx, by, bx+vxLen, by, '#4a9eff');
-    drawArrow(ctx, bx, by, bx, by+vyLen, '#ff7a5c');
-    // 合成速度：vxとvyを画面座標系に正しく変換してから正規化 → 接線方向
-    const screenDx =  vx     * scaleX;  // 画面上のx成分 [px/s]
-    const screenDy = -vy_cur * scaleY;  // 画面上のy成分 [px/s]（y反転）
-    const screenMag = Math.sqrt(screenDx*screenDx + screenDy*screenDy);
-    if (screenMag > 0.01) {
-      const totalLen = Math.sqrt(vxLen*vxLen + vyLen*vyLen);
-      const ux = screenDx / screenMag;
-      const uy = screenDy / screenMag;
-      drawArrow(ctx, bx, by, bx + ux*totalLen, by + uy*totalLen, '#ffc850');
-    }
+    drawArrow(ctx, bx, by, bx+vxLen, by,       '#4a9eff');
+    drawArrow(ctx, bx, by, bx,       by+vyLen,  '#ff7a5c');
+    // 合成速度：vxとvyの画面px成分の対角線（平行四辺形の対角線になる）
+    drawArrow(ctx, bx, by, bx+vxLen, by+vyLen,  '#ffc850');
   }
 
   // ── ボール ──

@@ -512,18 +512,15 @@ function drawShot(ctx, cv, curT, tf, params, trail, Hmax, Xmax, ballColor, glowC
     const vy_cur = vy0 - G * clampedT;
     const scaleX = plotW / Xmax;
     const scaleY = plotH / Hmax;
-    const dispScale = Math.min(plotW, plotH) * 0.25 / Math.max(v0, 1);
-    const vxLen =  vx     * dispScale;
-    const vyLen = -vy_cur * dispScale;
-    drawArrow(ctx, bx, by, bx+vxLen, by, '#4a9eff');
-    drawArrow(ctx, bx, by, bx, by+vyLen, '#ff7a5c');
-    const screenDx =  vx     * scaleX;
-    const screenDy = -vy_cur * scaleY;
-    const screenMag = Math.sqrt(screenDx*screenDx + screenDy*screenDy);
-    if (screenMag > 0.01) {
-      const totalLen = Math.sqrt(vxLen*vxLen + vyLen*vyLen);
-      drawArrow(ctx, bx, by, bx + (screenDx/screenMag)*totalLen, by + (screenDy/screenMag)*totalLen, '#ffc850');
-    }
+    // 初速ベクトルを画面座標に変換した長さを基準にする（θが違っても同じv0なら合成ベクトルが等長になる）
+    const refMag   = Math.sqrt((vx0 * scaleX) * (vx0 * scaleX) + (vy0 * scaleY) * (vy0 * scaleY));
+    const dispLen  = Math.min(plotW, plotH) * 0.5;
+    const dispScale = refMag > 0.01 ? dispLen / refMag : 1;
+    const vxLen =  vx     * scaleX * dispScale;
+    const vyLen = -vy_cur * scaleY * dispScale;
+    drawArrow(ctx, bx, by, bx+vxLen, by,       '#4a9eff');
+    drawArrow(ctx, bx, by, bx,       by+vyLen,  '#ff7a5c');
+    drawArrow(ctx, bx, by, bx+vxLen, by+vyLen,  '#ffc850');
   }
 
   // ── ボール ──
