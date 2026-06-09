@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.1)  7 JUN 2026 19:25
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.1)  9 JUN 2026 15:30
  restricted system commands enabled.
  file:line:error style messages enabled.
 **horizontal_projection
@@ -966,9 +966,13 @@ Package: dashrule 2013/03/28 v1.3 Dashed rules
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )
 \c@hdr@segments=\count363
-) (./physmotion.sty
+) (../physmotion.sty
+
+LaTeX Warning: You have requested file `',
+               but the file provides `physmotion'.
+
 Package: physmotion 2024/01/01 Physics Motion Diagram
- (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowinset=\dimen313
 \pgfarrowlength=\dimen314
@@ -982,9 +986,10 @@ warning  (map file): entry for 'ascgrp' already exists, duplicates ignored
 Package: lltjp-array 2024-07-21 Patch to array for LuaTeX-ja
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 54.
- (./out/horizontal_projection.aux)
-\openout1 = horizontal_projection.aux
 
+No file horizontal_projection.aux.
+
+\openout1 = horizontal_projection.aux
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
@@ -1066,7 +1071,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 54.
- (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+(c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 54.
@@ -1190,12 +1195,12 @@ L3 programming layer <2025-10-24>
 )
 
 Here is how much of LuaTeX's memory you used:
- 24393 strings out of 476290
+ 24388 strings out of 476290
  156564,1144653 words of node,token memory allocated
  1234 words of node memory still in use:
    11 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 271 attribute, 56 glue_spec, 37 attribute_list, 3 write, 15 user_defined nodes
    avail lists: 1:18,2:41716,3:1088,4:1107,5:402,6:54,7:3920,8:17,9:2116,10:8,11:4
- 45994 multiletter control sequences out of 65536+600000
+ 45993 multiletter control sequences out of 65536+600000
  79 fonts using 42561711 bytes
  107i,16n,101p,1766b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb>
